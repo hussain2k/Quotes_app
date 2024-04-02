@@ -1,9 +1,11 @@
+import React from "react";
 import axios from "axios";
 import Card from "@mui/material/Card";
 import { useState, useEffect } from "react";
-import { CardActionArea, Stack } from "@mui/material";
+import { Button, CardActionArea, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
+import GenQuotes from "./GenQuotes";
 
 function Quotes() {
   const [data, setData] = useState([]);
@@ -18,6 +20,10 @@ function Quotes() {
 
   return (
     <>
+      <div>
+        <Button variant="contained">Create new Quotes</Button>
+      </div>
+
       <h1>Quotes</h1>
       {isError !== "" && <h2>{isError}</h2>}
 

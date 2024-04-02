@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import Quotes from "./components/Quotes";
 
 function App() {
